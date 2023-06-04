@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <div class="container">
+      <h1>Tic Tac Toe</h1>
+
+      <div id="board">
+        <span class="name"> <span class="by-text">by:</span> Qaphael</span>
+        <button class="button-pushable" role="button">
+          <span class="button-shadow"></span>
+          <span class="button-edge"></span>
+          <span class="button-front cell" onclick="makeMove(0)"></span>
+        </button>
+
+        <button class="button-pushable" role="button">
+          <span class="button-shadow"></span>
+          <span class="button-edge"></span>
+          <span class="button-front cell" onclick="makeMove(1)"></span>
+        </button>
+
+        <button class="button-pushable" role="button">
+          <span class="button-shadow"></span>
+          <span class="button-edge"></span>
+          <span class="button-front cell" onclick="makeMove(2)"></span>
+        </button>
+
+        <button class="button-pushable" role="button">
+          <span class="button-shadow"></span>
+          <span class="button-edge"></span>
+          <span class="button-front cell" onclick="makeMove(3)"></span>
+        </button>
+
+        <button class="button-pushable" role="button">
+          <span class="button-shadow"></span>
+          <span class="button-edge"></span>
+          <span class="button-front cell" onclick="makeMove(4)"></span>
+        </button>
+
+        <button class="button-pushable" role="button">
+          <span class="button-shadow"></span>
+          <span class="button-edge"></span>
+          <span class="button-front cell" onclick="makeMove(5)"></span>
+        </button>
+
+        <button class="button-pushable" role="button">
+          <span class="button-shadow"></span>
+          <span class="button-edge"></span>
+          <span class="button-front cell" onclick="makeMove(6)"></span>
+        </button>
+
+        <button class="button-pushable" role="button">
+          <span class="button-shadow"></span>
+          <span class="button-edge"></span>
+          <span class="button-front cell" onclick="makeMove(7)"></span>
+        </button>
+
+        <button class="button-pushable" role="button">
+          <span class="button-shadow"></span>
+          <span class="button-edge"></span>
+          <div class="button-front cell" onclick="makeMove(8)"></div>
+        </button>
+
+        <div class="img-containers x">
+          <img src="./x.png" alt="x" />
+        </div>
+        <div class="img-containers o">
+          <img src="o.png" alt="o" />
+        </div>
+
+        <button
+          id="clear-counter"
+          class="btn button-pushable"
+          onclick="resetScores()"
+        >
+          <span class="button-shadow"></span>
+          <span class="button-edge"></span>
+          <span class="button-front">
+            <img src="./images/refresh-alt.svg" alt="reset score" />
+          </span>
+        </button>
+
+        <button
+          id="reset-button"
+          class="btn button-pushable"
+          onclick="resetGame()"
+        >
+          <span class="button-shadow"></span>
+          <span class="button-edge"></span>
+          <span class="button-front">
+            <img src="./images/refresh.svg" alt="refresh" />
+          </span>
+        </button>
+      </div>
+
+      <div class="message-container">
+        <div class="top-message"></div>
+        <div id="message"></div>
+        <div class="buttons-option">
+          <button
+            id="quit-button"
+            class="btn button-pushable"
+            onclick="closePopup()"
+          >
+            <span class="button-shadow"></span>
+            <span class="button-edge"></span>
+            <span class="button-front"> Quit </span>
+          </button>
+          <button
+            id="reset-button-two"
+            class="btn button-pushable"
+            onclick="resetGame(), closePopup()"
+          >
+            <span class="button-shadow"></span>
+            <span class="button-edge"></span>
+            <span class="button-front"> Next Round </span>
+          </button>
+        </div>
+      </div>
+
+      <div id="scoreboard">
+        <div id="player-score" class="counter">
+          <span class="player-name">X(YOU)</span>
+          <span class="score">0</span>
+        </div>
+        <div id="tie-score" class="counter">
+          <span class="player-name">TIES</span>
+          <span class="score">0</span>
+        </div>
+        <div id="cpu-score" class="counter">
+          <span class="player-name">O(CPU)</span>
+          <span class="score">0</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
